@@ -16,9 +16,7 @@ sudo apt install -y openjdk-11-jdk
 # Install watchman
 sudo apt install -y watchman
 
-# Install node.js and npm
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-sudo apt install -y nodejs
+
 
 # Install yarn
 sudo npm install -g yarn
