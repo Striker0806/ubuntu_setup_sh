@@ -23,6 +23,4 @@ yarn global add detox-cli
 # First, update sdkmanager
 $ANDROID_HOME/tools/bin/sdkmanager --update
 
-# Then, install necessary system images and create avd
-$ANDROID_HOME/tools/bin/sdkmanager "system-images;android-30;google_apis;x86_64"
-echo no | $ANDROID_HOME/tools/bin/avdmanager create avd -n APP_NAME -k "system-images;android-30;google_apis;x86_64"
+npx react-native doctor
