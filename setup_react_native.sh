@@ -10,9 +10,6 @@ sudo apt update && sudo apt upgrade -y
 # Install essential libraries
 sudo apt install -y build-essential libssl-dev git curl
 
-# Install Java Development Kit (OpenJDK)
-sudo apt install -y openjdk-11-jdk
-
 # Install watchman
 sudo apt install -y watchman
 
