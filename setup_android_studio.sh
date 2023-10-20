@@ -32,6 +32,16 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+# Set up environment variables for Android SDK
+echo 'export ANDROID_HOME=$HOME/Android/Sdk' >> ~/.bashrc
+echo 'export PATH=$PATH:$ANDROID_HOME/emulator' >> ~/.bashrc
+echo 'export PATH=$PATH:$ANDROID_HOME/tools' >> ~/.bashrc
+echo 'export PATH=$PATH:$ANDROID_HOME/tools/bin' >> ~/.bashrc
+echo 'export PATH=$PATH:$ANDROID_HOME/platform-tools' >> ~/.bashrc
+
+# Remember to source or restart your terminal
+source ~/.bashrc
+
 # Create avd
 echo -e "${BLUE}Creating Android Virtual Device (AVD)...${NC}"
 echo no | $ANDROID_HOME/tools/bin/avdmanager create avd -n APP_NAME -k "system-images;android-30;google_apis;x86_64"
