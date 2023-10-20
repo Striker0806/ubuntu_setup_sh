@@ -13,7 +13,7 @@ sudo apt update
 sudo apt install -y unzip lib32stdc++6 lib32z1
 
 # Download and Install Android Studio
-ANDROID_STUDIO_URL="https://dl.google.com/dl/android/studio/ide-zips/3.3.0.20/android-studio-ide-182.5199772-linux.zip"
+ANDROID_STUDIO_URL= "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2023.2.1.9/android-studio-2023.2.1.9-linux.tar.gz"
 DOWNLOADS_DIR="$HOME/Downloads"
 echo -e "${BLUE}Downloading Android Studio${NC}"
 wget -P $DOWNLOADS_DIR $ANDROID_STUDIO_URL
