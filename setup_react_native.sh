@@ -21,8 +21,6 @@ sudo apt install -y watchman
 # Install yarn
 sudo npm install -g yarn
 
-# Install Android Studio using Snap
-sudo snap install android-studio --classic
 
 # Install detox for e2e testing
 yarn global add detox-cli
